@@ -1,19 +1,9 @@
-//
-//  ViewController.swift
-//  publicarro
-//
-//  Created by EDILBERTO DA SILVA RAMOS JUNIOR on 26/10/15.
-//  Copyright © 2015 tambatech. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController, UIPageViewControllerDataSource {
-    
-    // MARK: - Variables
+class ViewController: UIViewController, UIPageViewControllerDataSource
+{
     private var pageViewController: UIPageViewController?
-    
-    // Initialize it right away here
     private let contentImages = ["pessoaIcon.pdf", "anuncianteIcon.pdf"];
     private let contentLabelTitles = ["Para o motorista...", "Para o anunciante..."];
     private let contentTextView = [
@@ -21,89 +11,77 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         "Somos uma forma de expandir sua marca ou produto abrangendo todos os segmentos e classes sociais com uma propaganda que fica sempre ao nível dos olhos de motoristas e passageiros."
     ];
     
-    // MARK: - View Lifecycle
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.PBCBackGorundColor()
-        
+        view.backgroundColor = UIColor.PBCBackgroundColor()
         createPageViewController()
-        setupPageControl()
-        self.navigationController?.navigationBar.hidden = true
+        setupPageViewControl()
     }
     
-    private func createPageViewController() {
-        
-        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
+    private func createPageViewController()
+    {
+        let pageController = storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         pageController.dataSource = self
-        
-        if contentImages.count > 0 {
-            let firstController = getItemController(0)!
-            let startingViewControllers: NSArray = [firstController]
-            pageController.setViewControllers(startingViewControllers as? [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        if contentImages.count > 0
+        {
+            pageController.setViewControllers([getItemController(0)!], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
         }
-        
         pageViewController = pageController
-        pageViewController?.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.size.height-41)
+        pageViewController?.view.frame = CGRectMake(0, view.frame.size.width-300, view.frame.width, view.frame.size.height-120)
         addChildViewController(pageViewController!)
-        self.view.addSubview(pageViewController!.view)
+        view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
     }
     
-    private func setupPageControl() {
+    private func setupPageViewControl()
+    {
         let appearance = UIPageControl.appearance()
         appearance.pageIndicatorTintColor = UIColor.grayColor()
         appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
-        appearance.backgroundColor = UIColor.PBCBackGorundColor()
     }
     
-    // MARK: - UIPageViewControllerDataSource
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
+    {
         let itemController = viewController as! PageItemController
-        
-        if itemController.itemIndex > 0 {
+        if itemController.itemIndex > 0
+        {
             return getItemController(itemController.itemIndex-1)
         }
-        
         return nil
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
+    {
         let itemController = viewController as! PageItemController
-        
-        if itemController.itemIndex+1 < contentImages.count {
+        if itemController.itemIndex+1 < contentImages.count
+        {
             return getItemController(itemController.itemIndex+1)
         }
-        
         return nil
     }
     
-    private func getItemController(itemIndex: Int) -> PageItemController? {
-        
-        if itemIndex < contentImages.count {
-            let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("ItemController") as! PageItemController
+    private func getItemController(itemIndex: Int) -> PageItemController?
+    {
+        if itemIndex < contentImages.count
+        {
+            let pageItemController = storyboard!.instantiateViewControllerWithIdentifier("ContentController") as! PageItemController
             pageItemController.itemIndex = itemIndex
             pageItemController.imageName = contentImages[itemIndex]
             pageItemController.labelName = contentLabelTitles[itemIndex]
             pageItemController.textTutorial = contentTextView[itemIndex]
             return pageItemController
         }
-        
         return nil
     }
     
-    // MARK: - Page Indicator
-    
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int
+    {
         return contentImages.count
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int
+    {
         return 0
     }
-    
 }
-
