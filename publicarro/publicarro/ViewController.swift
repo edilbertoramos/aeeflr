@@ -16,11 +16,12 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         super.viewDidLoad()
         createPageViewController()
         setupPageViewControl()
-    }
-    
-    override func viewDidAppear(animated: Bool)
-    {
         navigationController?.navigationBar.hidden = true
+    }
+    @IBAction func buttonTapped(sender: AnyObject)
+    {
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("AnunciosNavigation") as! UINavigationController
+        presentViewController(controller, animated: true, completion: nil)
     }
     
     private func createPageViewController()
