@@ -12,10 +12,4 @@ class PBCAnunciosViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
     }
-    /*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-    
-    }
-    */
 }

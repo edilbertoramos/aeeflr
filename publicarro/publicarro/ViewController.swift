@@ -14,9 +14,13 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.PBCBackgroundColor()
         createPageViewController()
         setupPageViewControl()
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        navigationController?.navigationBar.hidden = true
     }
     
     private func createPageViewController()
@@ -36,9 +40,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     
     private func setupPageViewControl()
     {
-        let appearance = UIPageControl.appearance()
-        appearance.pageIndicatorTintColor = UIColor.grayColor()
-        appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.grayColor()
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.whiteColor()
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
@@ -46,7 +49,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         let itemController = viewController as! PageItemController
         if itemController.itemIndex > 0
         {
-            return getItemController(itemController.itemIndex-1)
+            return getItemController(itemController.itemIndex!-1)
         }
         return nil
     }
@@ -54,9 +57,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
     {
         let itemController = viewController as! PageItemController
-        if itemController.itemIndex+1 < contentImages.count
+        if itemController.itemIndex!+1 < contentImages.count
         {
-            return getItemController(itemController.itemIndex+1)
+            return getItemController(itemController.itemIndex!+1)
         }
         return nil
     }
