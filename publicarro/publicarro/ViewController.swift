@@ -18,10 +18,21 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         setupPageViewControl()
         navigationController?.navigationBar.hidden = true
     }
+    
     @IBAction func buttonTapped(sender: AnyObject)
     {
         let controller = storyboard!.instantiateViewControllerWithIdentifier("AnunciosNavigation") as! UINavigationController
+        controller
         presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    @IBAction func button1(sender: AnyObject)
+    {
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("CadastroView")
+        controller.view.frame = CGRectMake(view.frame.width/20, view.frame.height/4, 340, 380)
+        addChildViewController(controller)
+        view.addSubview(controller.view)
+        pageViewController!.didMoveToParentViewController(self)
     }
     
     private func createPageViewController()
@@ -33,7 +44,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
             pageController.setViewControllers([getItemController(0)!], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
         }
         pageViewController = pageController
-        pageViewController?.view.frame = CGRectMake(0, view.frame.size.width-300, view.frame.width, view.frame.size.height-120)
+        pageViewController?.view.frame = CGRectMake(0, view.frame.width-300, view.frame.width, view.frame.height-120)
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)

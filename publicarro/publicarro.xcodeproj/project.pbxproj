@@ -156,11 +156,11 @@
 				2412BF681BDE5D2500C53372 /* Main.storyboard */,
 				2412BF9B1BDE717600C53372 /* PBCColor.swift */,
 				2A679E771BE1063B00969DDF /* PBCAnunciosTableViewController.swift */,
+				2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */,
 				2412BF6E1BDE5D2500C53372 /* Assets.xcassets */,
 				2412BF701BDE5D2500C53372 /* LaunchScreen.storyboard */,
 				2412BF731BDE5D2500C53372 /* Info.plist */,
 				2412BF6B1BDE5D2500C53372 /* publicarro.xcdatamodeld */,
-				2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */,
 			);
 			path = publicarro;
 			sourceTree = "<group>";
