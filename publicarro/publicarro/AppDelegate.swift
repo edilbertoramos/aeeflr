@@ -1,6 +1,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
@@ -9,6 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+        Parse.setApplicationId("DzJB0iDECJ4uHqKIxRw3jNRAjlDLD8blMINbatUS", clientKey: "t5uyClsR4eHjjN1JLHFpYgPbXiXjfeCCMmhqE2K1")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         return true
     }
     
