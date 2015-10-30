@@ -4,12 +4,14 @@ import UIKit
 class ViewController: UIViewController, UIPageViewControllerDataSource
 {
     private var pageViewController: UIPageViewController?
-    private let contentImages = ["pessoaIcon.pdf", "anuncianteIcon.pdf"];
-    private let contentLabelTitles = ["Para o motorista...", "Para o anunciante..."];
+    private let contentImages = ["pessoaIcon.pdf", "anuncianteIcon.pdf"]
+    private let contentLabelTitles = ["Para o motorista...", "Para o anunciante..."]
     private let contentTextView = [
         "É uma forma de se relacionar com anunciantes prestando serviços de divulgação, ganhando uma gratificação financeira e uma lavagem de carro.",
         "Somos uma forma de expandir sua marca ou produto abrangendo todos os segmentos e classes sociais com uma propaganda que fica sempre ao nível dos olhos de motoristas e passageiros."
-    ];
+    ]
+    
+    @IBOutlet weak var btClose: UIButton!
     
     override func viewDidLoad()
     {
@@ -22,32 +24,27 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     @IBAction func buttonTapped(sender: AnyObject)
     {
         let controller = storyboard!.instantiateViewControllerWithIdentifier("AnunciosNavigation") as! UINavigationController
-        controller
         presentViewController(controller, animated: true, completion: nil)
     }
     
     @IBAction func button1(sender: AnyObject)
     {
         let controller = storyboard!.instantiateViewControllerWithIdentifier("CadastroView")
-        controller.view.frame = CGRectMake(view.frame.width/20, view.frame.height/4, 340, 380)
         addChildViewController(controller)
-        view.addSubview(controller.view)
-        pageViewController!.didMoveToParentViewController(self)
+        UIView.transitionWithView(view, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {self.view.addSubview(controller.view)}, completion: nil)
     }
     
     private func createPageViewController()
     {
-        let pageController = storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
-        pageController.dataSource = self
+        pageViewController = (storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController)
+        pageViewController!.dataSource = self
         if contentImages.count > 0
         {
-            pageController.setViewControllers([getItemController(0)!], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+            pageViewController!.setViewControllers([getItemController(0)!], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
         }
-        pageViewController = pageController
         pageViewController?.view.frame = CGRectMake(0, view.frame.width-300, view.frame.width, view.frame.height-120)
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
-        pageViewController!.didMoveToParentViewController(self)
     }
     
     private func setupPageViewControl()

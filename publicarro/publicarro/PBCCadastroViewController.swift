@@ -19,14 +19,14 @@ class PBCCadastroViewController: UIViewController
         print(tfPassword.text)
         user.username = tfLogin.text
         user.password = tfPassword.text
-        user.signUpInBackgroundWithBlock { success, error in
-            if error == nil
+        user.signUpInBackgroundWithBlock { (sucess, error) -> Void in
+            if sucess == true
             {
-                print(error!.userInfo["error"] as? NSString)
+                print("Usuario foi Cadastrado!")
             }
             else
             {
-                print("Usuario Cadastrado !")
+                print(error!.userInfo["error"] as? NSString)
             }
         }
     }
