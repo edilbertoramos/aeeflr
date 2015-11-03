@@ -189,6 +189,10 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KIr-0d-9r9" id="kdy-gE-Dds"/>
+                                    <outlet property="delegate" destination="KIr-0d-9r9" id="rya-g4-92I"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u83-oB-FiN">
                                 <rect key="frame" x="188" y="622" width="187" height="45"/>
