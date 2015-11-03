@@ -1,7 +1,7 @@
 
 import UIKit
 
-class PBCAnunciosTableViewController: UITableViewController
+class PBCAnunciosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     override func viewDidLoad()
     {
@@ -14,17 +14,24 @@ class PBCAnunciosTableViewController: UITableViewController
         super.didReceiveMemoryWarning()
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    @IBAction func signUpButton(sender: AnyObject)
+    {
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("CadastroView")
+        addChildViewController(controller)
+        UIView.transitionWithView(view, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {self.view.addSubview(controller.view)}, completion: nil)
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 10
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("AnuncioCell", forIndexPath: indexPath)
         return cell
