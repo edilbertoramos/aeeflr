@@ -202,9 +202,6 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="136" height="116"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <segue destination="q4U-uC-8EI" kind="show" id="kIx-MB-WCC"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Delicia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq4-6Y-X05">
                                                     <rect key="frame" x="135" y="0.0" width="208" height="29"/>
@@ -261,25 +258,6 @@
             </objects>
             <point key="canvasLocation" x="3235.5" y="621.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Gv5-mq-pFh">
-            <objects>
-                <viewController id="q4U-uC-8EI" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ti9-sj-UUm"/>
-                        <viewControllerLayoutGuide type="bottom" id="bqY-lz-Ah6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WsU-1g-VgE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pG3-Ur-AB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3235.5" y="1430.5"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5ll-l9-8n6">
             <objects>
@@ -317,17 +295,6 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="THH-0V-KyQ">
                                 <rect key="frame" x="32" y="116" width="310" height="425"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoT-NT-l5S">
-                                        <rect key="frame" x="0.0" y="147" width="310" height="101"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="ANUNCIANTE">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="signUpAnunciante:" destination="kpM-FR-cIg" eventType="touchUpInside" id="Eza-3x-sp8"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EP-BQ-L55">
                                         <rect key="frame" x="0.0" y="291" width="310" height="100"/>
                                         <animations/>
@@ -344,6 +311,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoT-NT-l5S">
+                                        <rect key="frame" x="0.0" y="147" width="310" height="101"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="ANUNCIANTE">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpAnunciante:" destination="kpM-FR-cIg" eventType="touchUpInside" id="Eza-3x-sp8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -379,7 +357,7 @@
                 <navigationController storyboardIdentifier="AnunciosNavigation" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="d3t-FK-Bfd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="g7u-MT-k40">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="g7u-MT-k40">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
@@ -396,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="2238.5" y="621.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Anuncios Disponiveis View Controller-->
         <scene sceneID="qC5-kL-a5Q">
             <objects>
-                <viewController id="hsh-Id-Dxe" sceneMemberID="viewController">
+                <viewController id="hsh-Id-Dxe" customClass="PBCAnunciosDisponiveisViewController" customModule="publicarro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iKp-Qj-JmE"/>
                         <viewControllerLayoutGuide type="bottom" id="JLy-cT-XoX"/>
@@ -417,6 +395,7 @@
                                 </state>
                                 <connections>
                                     <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gx0-76-O8B"/>
+                                    <action selector="cadastroButton:" destination="hsh-Id-Dxe" eventType="touchUpInside" id="c3S-MG-F2Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVL-IJ-6Nw">
