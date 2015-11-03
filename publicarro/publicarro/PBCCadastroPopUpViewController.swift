@@ -1,13 +1,11 @@
 
 import UIKit
-import ParseUI
 
-class PBCCadastroPopUpViewController: UIViewController, PFSignUpViewControllerDelegate
+class PBCCadastroPopUpViewController: UIViewController
 {
     @IBOutlet weak var btClose: UIButton!
     @IBOutlet weak var viewPopUp: UIView!
     
-    let test = PFSignUpViewController()
 
     override func viewDidLoad()
     {
@@ -26,10 +24,7 @@ class PBCCadastroPopUpViewController: UIViewController, PFSignUpViewControllerDe
         UIView.transitionWithView(view, duration: 0.4, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {self.view.hidden = true}, completion: nil)
     }
     
-    @IBAction func signUpAnunciante(sender: AnyObject)
-    {
-        presentViewController(test, animated: false, completion: nil)
-    }
+  
     
     override func viewDidDisappear(animated: Bool)
     {
