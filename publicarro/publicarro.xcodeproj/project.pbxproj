@@ -27,7 +27,6 @@
 		2A550BEB1BE24FF900036839 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BEA1BE24FF900036839 /* QuartzCore.framework */; };
 		2A550BED1BE2500300036839 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BEC1BE2500300036839 /* Security.framework */; };
 		2A550BEF1BE2501200036839 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BEE1BE2501200036839 /* Social.framework */; };
-		2A550BF11BE2501600036839 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF01BE2501600036839 /* StoreKit.framework */; };
 		2A550BF31BE2502D00036839 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF21BE2502D00036839 /* SystemConfiguration.framework */; };
 		2A550BF51BE2504800036839 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF41BE2504800036839 /* libz.tbd */; };
 		2A550BF71BE2506B00036839 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF61BE2506B00036839 /* libsqlite3.tbd */; };
@@ -86,7 +85,6 @@
 		2A550BEA1BE24FF900036839 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2A550BEC1BE2500300036839 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2A550BEE1BE2501200036839 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		2A550BF01BE2501600036839 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2A550BF21BE2502D00036839 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2A550BF41BE2504800036839 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2A550BF61BE2506B00036839 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -109,7 +107,6 @@
 				2A550BF71BE2506B00036839 /* libsqlite3.tbd in Frameworks */,
 				2A550BF51BE2504800036839 /* libz.tbd in Frameworks */,
 				2A550BF31BE2502D00036839 /* SystemConfiguration.framework in Frameworks */,
-				2A550BF11BE2501600036839 /* StoreKit.framework in Frameworks */,
 				2A550BEF1BE2501200036839 /* Social.framework in Frameworks */,
 				2A550BED1BE2500300036839 /* Security.framework in Frameworks */,
 				2A550BEB1BE24FF900036839 /* QuartzCore.framework in Frameworks */,
@@ -211,7 +208,6 @@
 				2A550BF41BE2504800036839 /* libz.tbd */,
 				2AD4EFF51BE3B90F00F5DF29 /* ParseUI.framework */,
 				2A550BF21BE2502D00036839 /* SystemConfiguration.framework */,
-				2A550BF01BE2501600036839 /* StoreKit.framework */,
 				2A550BEE1BE2501200036839 /* Social.framework */,
 				2A550BEC1BE2500300036839 /* Security.framework */,
 				2A550BEA1BE24FF900036839 /* QuartzCore.framework */,
@@ -293,6 +289,12 @@
 				TargetAttributes = {
 					2412BF601BDE5D2500C53372 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = V9L7W6G6H2;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					2412BF771BDE5D2500C53372 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -519,7 +521,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarro;
-				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
+				PRODUCT_NAME = publiCarro;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
