@@ -19,11 +19,19 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         createPageViewController()
         setupPageViewControl()
         navigationController?.navigationBar.hidden = true
+        btClose.layer.cornerRadius = 25
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        navigationController?.navigationBar.hidden = true
+
+    }
+    
+
     
     @IBAction func buttonTapped(sender: AnyObject)
     {
-        let controller = storyboard!.instantiateViewControllerWithIdentifier("AnunciosNavigation") as! UINavigationController
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("AnunciosNavBar") 
         presentViewController(controller, animated: true, completion: nil)
     }
     

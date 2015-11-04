@@ -1,10 +1,12 @@
 import UIKit
 
-class PBCAnunciosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class PBCAnunciosLoginViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        navigationController?.navigationBar.hidden = false
+
     }
     
     override func didReceiveMemoryWarning()

@@ -1,19 +1,21 @@
 //
-//  PBCAnunciosDisponiveisViewController.swift
-//  publicarro
+//  PBCCadastroMotoristaViewController.swift
+//  publiCarro
 //
-//  Created by Lúcio Barros on 03/11/15.
+//  Created by Lúcio Barros on 04/11/15.
 //  Copyright © 2015 tambatech. All rights reserved.
 //
 
 import UIKit
 
-class PBCAnunciosDisponiveisViewController: UIViewController {
+class PBCCadastroMotoristaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationController?.navigationBar.hidden = false
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,11 +23,6 @@ class PBCAnunciosDisponiveisViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cadastroButton(sender: AnyObject){
-        let controller = storyboard!.instantiateViewControllerWithIdentifier("CadastroView")
-        addChildViewController(controller)
-        UIView.transitionWithView(view, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {self.view.addSubview(controller.view)}, completion: nil)
-    }
 
     /*
     // MARK: - Navigation

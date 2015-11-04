@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:publicarro.xcodeproj">
+      location = "self:/Users/luciobarros/Documents/aeeflr/publicarro/publiCarro.xcodeproj">
    </FileRef>
 </Workspace>
