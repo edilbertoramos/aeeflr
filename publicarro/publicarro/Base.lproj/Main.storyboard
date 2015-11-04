@@ -9,7 +9,6 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="Tutorial" id="BYZ-38-t0r" customClass="ViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> dev/lucio
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -126,9 +125,7 @@
         <!--Anúncios-->
         <scene sceneID="ifJ-b6-cOH">
             <objects>
-
                 <viewController storyboardIdentifier="Anuncios" title="Anúncios" id="KIr-0d-9r9" customClass="PBCAnunciosLoginViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> dev/lucio
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yA6-ra-jiw"/>
                         <viewControllerLayoutGuide type="bottom" id="z7s-dO-5zk"/>
@@ -333,7 +330,6 @@
         <scene sceneID="Gju-7r-35p">
             <objects>
                 <viewController title="Login" id="lue-Ad-I02" customClass="PBCLoginViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> dev/lucio
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZN-g9-7hy"/>
                         <viewControllerLayoutGuide type="bottom" id="IoG-Jl-bxf"/>
@@ -501,9 +497,7 @@
         <!--Orçamento-->
         <scene sceneID="RlY-As-Swa">
             <objects>
-
                 <viewController title="Orçamento" id="2aB-iE-WwJ" customClass="PBCOrcamentoViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> dev/lucio
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eO4-kl-tIX"/>
                         <viewControllerLayoutGuide type="bottom" id="Whv-po-A3h"/>
@@ -557,10 +551,8 @@
         <!--Orçamento-->
         <scene sceneID="BTJ-Fc-uW8">
             <objects>
-
                 <tableViewController title="Orçamento" id="zgj-dy-LSN" customClass="PBCOrcamentoTableViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Ub-6p-s49">
->>>>>>> dev/lucio
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.18431372549019609" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
@@ -671,9 +663,6 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="nomeTextField" destination="Czj-ad-XIW" id="7UI-hh-bth"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPy-Gg-etQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
