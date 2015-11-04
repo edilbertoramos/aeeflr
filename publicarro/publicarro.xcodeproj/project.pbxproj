@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2412BF611BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = publiCarro.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2412BF611BDE5D2500C53372 /* publiCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = publiCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2412BF641BDE5D2500C53372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2412BF661BDE5D2500C53372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2412BF691BDE5D2500C53372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		2412BF621BDE5D2500C53372 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2412BF611BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.app */,
+				2412BF611BDE5D2500C53372 /* publiCarro.app */,
 				2412BF781BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */,
 				2412BF831BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */,
 			);
@@ -239,7 +239,7 @@
 			);
 			name = publicarro;
 			productName = publicarro;
-			productReference = 2412BF611BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.app */;
+			productReference = 2412BF611BDE5D2500C53372 /* publiCarro.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2412BF771BDE5D2500C53372 /* publicarroTests */ = {
@@ -289,7 +289,6 @@
 				TargetAttributes = {
 					2412BF601BDE5D2500C53372 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = V9L7W6G6H2;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
