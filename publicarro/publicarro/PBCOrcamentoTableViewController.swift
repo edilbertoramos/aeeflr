@@ -10,6 +10,7 @@ import UIKit
 
 class PBCOrcamentoTableViewController: UITableViewController {
 
+    @IBOutlet var nomeTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

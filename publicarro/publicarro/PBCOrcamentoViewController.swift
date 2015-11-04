@@ -9,20 +9,28 @@
 import UIKit
 
 class PBCOrcamentoViewController: UIViewController {
-    @IBOutlet var closeButton: UIButton!
     @IBOutlet var orcamentoButton: UIButton!
+    
+    private var embeddedViewController: PBCOrcamentoTableViewController!
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let vc = segue.destinationViewController as? PBCOrcamentoTableViewController
+            where segue.identifier == "OrcamentoEmbedSegue" {
+                
+                self.embeddedViewController = vc
+        }
+    }
+    @IBAction func enviarOrcamento(sender: AnyObject) {
+        print(self.embeddedViewController.nomeTextField.text)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let dismiss: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
-        view.addGestureRecognizer(dismiss)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: self.view.window)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: self.view.window)
         
         navigationController?.navigationBar.hidden = false
+        
 
     }
 
@@ -31,15 +39,10 @@ class PBCOrcamentoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: self.view.window)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: self.view.window)
-    }
+    
 
     
-    func DismissKeyboard(){
-        view.endEditing(true)
-    }
+   
     
     
 
