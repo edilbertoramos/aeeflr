@@ -31,10 +31,15 @@
 		2A550BF31BE2502D00036839 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF21BE2502D00036839 /* SystemConfiguration.framework */; };
 		2A550BF51BE2504800036839 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF41BE2504800036839 /* libz.tbd */; };
 		2A550BF71BE2506B00036839 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A550BF61BE2506B00036839 /* libsqlite3.tbd */; };
-		2A550BF91BE2520F00036839 /* PBCCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */; };
-		2A679E781BE1063B00969DDF /* PBCAnunciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A679E771BE1063B00969DDF /* PBCAnunciosViewController.swift */; };
+		2A679E781BE1063B00969DDF /* PBCAnunciosLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A679E771BE1063B00969DDF /* PBCAnunciosLoginViewController.swift */; };
 		2AD4EFF41BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */; };
 		2AD4EFF61BE3B90F00F5DF29 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD4EFF51BE3B90F00F5DF29 /* ParseUI.framework */; };
+		778622891BEA46C9008136AC /* PBCCadastroMotoristaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778622881BEA46C9008136AC /* PBCCadastroMotoristaTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		778C30671BEA36A20091548E /* PBCCadastroMotoristaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C30661BEA36A20091548E /* PBCCadastroMotoristaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		778C306D1BEA3F350091548E /* PBCLoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C306C1BEA3F350091548E /* PBCLoginTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		778C306F1BEA400C0091548E /* PBCOrcamentoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C306E1BEA400C0091548E /* PBCOrcamentoTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7794DEBF1BE932130069E00A /* PBCOrcamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794DEBE1BE932130069E00A /* PBCOrcamentoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7794DEC11BE933A20069E00A /* PBCLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794DEC01BE933A20069E00A /* PBCLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2412BF611BDE5D2500C53372 /* publicarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = publicarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2412BF611BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = publiCarro.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2412BF641BDE5D2500C53372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2412BF661BDE5D2500C53372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2412BF691BDE5D2500C53372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,10 +68,10 @@
 		2412BF6E1BDE5D2500C53372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2412BF711BDE5D2500C53372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2412BF731BDE5D2500C53372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2412BF781BDE5D2500C53372 /* publicarroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = publicarroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2412BF781BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = publiCarro.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2412BF7C1BDE5D2500C53372 /* publicarroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicarroTests.swift; sourceTree = "<group>"; };
 		2412BF7E1BDE5D2500C53372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2412BF831BDE5D2500C53372 /* publicarroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = publicarroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2412BF831BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = publiCarro.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2412BF871BDE5D2500C53372 /* publicarroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicarroUITests.swift; sourceTree = "<group>"; };
 		2412BF891BDE5D2500C53372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2412BF991BDE668900C53372 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
@@ -85,10 +90,15 @@
 		2A550BF21BE2502D00036839 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2A550BF41BE2504800036839 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2A550BF61BE2506B00036839 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCCadastroViewController.swift; sourceTree = "<group>"; };
-		2A679E771BE1063B00969DDF /* PBCAnunciosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCAnunciosViewController.swift; sourceTree = "<group>"; };
+		2A679E771BE1063B00969DDF /* PBCAnunciosLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCAnunciosLoginViewController.swift; sourceTree = "<group>"; };
 		2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCCadastroPopUpViewController.swift; sourceTree = "<group>"; };
 		2AD4EFF51BE3B90F00F5DF29 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		778622881BEA46C9008136AC /* PBCCadastroMotoristaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCCadastroMotoristaTableViewController.swift; sourceTree = "<group>"; };
+		778C30661BEA36A20091548E /* PBCCadastroMotoristaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCCadastroMotoristaViewController.swift; sourceTree = "<group>"; };
+		778C306C1BEA3F350091548E /* PBCLoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCLoginTableViewController.swift; sourceTree = "<group>"; };
+		778C306E1BEA400C0091548E /* PBCOrcamentoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCOrcamentoTableViewController.swift; sourceTree = "<group>"; };
+		7794DEBE1BE932130069E00A /* PBCOrcamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCOrcamentoViewController.swift; sourceTree = "<group>"; };
+		7794DEC01BE933A20069E00A /* PBCLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +155,9 @@
 		2412BF621BDE5D2500C53372 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2412BF611BDE5D2500C53372 /* publicarro.app */,
-				2412BF781BDE5D2500C53372 /* publicarroTests.xctest */,
-				2412BF831BDE5D2500C53372 /* publicarroUITests.xctest */,
+				2412BF611BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.app */,
+				2412BF781BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */,
+				2412BF831BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,13 +165,18 @@
 		2412BF631BDE5D2500C53372 /* publicarro */ = {
 			isa = PBXGroup;
 			children = (
+				778622881BEA46C9008136AC /* PBCCadastroMotoristaTableViewController.swift */,
 				2412BF641BDE5D2500C53372 /* AppDelegate.swift */,
 				2412BF661BDE5D2500C53372 /* ViewController.swift */,
 				2412BF991BDE668900C53372 /* PageItemController.swift */,
 				2412BF681BDE5D2500C53372 /* Main.storyboard */,
+				778C306E1BEA400C0091548E /* PBCOrcamentoTableViewController.swift */,
+				778C306C1BEA3F350091548E /* PBCLoginTableViewController.swift */,
+				778C30661BEA36A20091548E /* PBCCadastroMotoristaViewController.swift */,
+				7794DEC01BE933A20069E00A /* PBCLoginViewController.swift */,
+				7794DEBE1BE932130069E00A /* PBCOrcamentoViewController.swift */,
 				2412BF9B1BDE717600C53372 /* PBCColor.swift */,
-				2A679E771BE1063B00969DDF /* PBCAnunciosViewController.swift */,
-				2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */,
+				2A679E771BE1063B00969DDF /* PBCAnunciosLoginViewController.swift */,
 				2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */,
 				2412BF6E1BDE5D2500C53372 /* Assets.xcassets */,
 				2412BF701BDE5D2500C53372 /* LaunchScreen.storyboard */,
@@ -228,7 +243,7 @@
 			);
 			name = publicarro;
 			productName = publicarro;
-			productReference = 2412BF611BDE5D2500C53372 /* publicarro.app */;
+			productReference = 2412BF611BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2412BF771BDE5D2500C53372 /* publicarroTests */ = {
@@ -246,7 +261,7 @@
 			);
 			name = publicarroTests;
 			productName = publicarroTests;
-			productReference = 2412BF781BDE5D2500C53372 /* publicarroTests.xctest */;
+			productReference = 2412BF781BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2412BF821BDE5D2500C53372 /* publicarroUITests */ = {
@@ -264,7 +279,7 @@
 			);
 			name = publicarroUITests;
 			productName = publicarroUITests;
-			productReference = 2412BF831BDE5D2500C53372 /* publicarroUITests.xctest */;
+			productReference = 2412BF831BDE5D2500C53372 /* publiCarro.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +304,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2412BF5C1BDE5D2500C53372 /* Build configuration list for PBXProject "publicarro" */;
+			buildConfigurationList = 2412BF5C1BDE5D2500C53372 /* Build configuration list for PBXProject "publiCarro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -341,14 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778622891BEA46C9008136AC /* PBCCadastroMotoristaTableViewController.swift in Sources */,
 				2AD4EFF41BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift in Sources */,
 				2412BF671BDE5D2500C53372 /* ViewController.swift in Sources */,
+				778C306D1BEA3F350091548E /* PBCLoginTableViewController.swift in Sources */,
+				7794DEC11BE933A20069E00A /* PBCLoginViewController.swift in Sources */,
 				2412BF9C1BDE717600C53372 /* PBCColor.swift in Sources */,
+				778C306F1BEA400C0091548E /* PBCOrcamentoTableViewController.swift in Sources */,
 				2412BF651BDE5D2500C53372 /* AppDelegate.swift in Sources */,
-				2A550BF91BE2520F00036839 /* PBCCadastroViewController.swift in Sources */,
 				2412BF9A1BDE668900C53372 /* PageItemController.swift in Sources */,
+				778C30671BEA36A20091548E /* PBCCadastroMotoristaViewController.swift in Sources */,
 				2412BF6D1BDE5D2500C53372 /* publicarro.xcdatamodeld in Sources */,
-				2A679E781BE1063B00969DDF /* PBCAnunciosViewController.swift in Sources */,
+				7794DEBF1BE932130069E00A /* PBCOrcamentoViewController.swift in Sources */,
+				2A679E781BE1063B00969DDF /* PBCAnunciosLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +519,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -517,7 +537,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -529,8 +549,8 @@
 				INFOPLIST_FILE = publicarroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarroTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publicarro.app/publicarro";
+				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publiCarro.temp_caseinsensitive_rename.app/publiCarro.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -541,8 +561,8 @@
 				INFOPLIST_FILE = publicarroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarroTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publicarro.app/publicarro";
+				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publiCarro.temp_caseinsensitive_rename.app/publiCarro.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -552,7 +572,7 @@
 				INFOPLIST_FILE = publicarroUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarroUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = publicarro;
 				USES_XCTRUNNER = YES;
 			};
@@ -564,7 +584,7 @@
 				INFOPLIST_FILE = publicarroUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tambatech.publicarroUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = publiCarro.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = publicarro;
 				USES_XCTRUNNER = YES;
 			};
@@ -573,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2412BF5C1BDE5D2500C53372 /* Build configuration list for PBXProject "publicarro" */ = {
+		2412BF5C1BDE5D2500C53372 /* Build configuration list for PBXProject "publiCarro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2412BF8A1BDE5D2500C53372 /* Debug */,
