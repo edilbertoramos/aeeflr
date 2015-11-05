@@ -20,9 +20,8 @@ class PBCAnimacaoViewController: UIViewController {
         
         
         // definindo o tamanho
-        publicarro.frame = CGRect(x: 60, y: 300, width: 100, height: 100)
-        //publicarro.frame = CGRect(x: 320-50, y: 120, width: 50, height: 50)
-     //   publicarro.frame = CGRectMake(0, yPosition, size, size)
+          publicarro.frame = CGRect(x: 187, y:333 , width: 100, height: 100)
+    
 
         
         self.view.addSubview(publicarro) // adicionando a imagem na view
