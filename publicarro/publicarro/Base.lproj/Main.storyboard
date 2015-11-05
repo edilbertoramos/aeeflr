@@ -685,11 +685,14 @@
                                 <state key="normal" title="Cadastre-se">
                                     <color key="titleColor" red="0.93991566130000004" green="0.93991566130000004" blue="0.93991566130000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cadastro:" destination="3vu-bq-c3a" eventType="touchUpInside" id="jqj-CS-EOq"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-yH-qvK">
                                 <rect key="frame" x="0.0" y="65" width="375" height="544"/>
                                 <connections>
-                                    <segue destination="rsu-3j-Xfi" kind="embed" id="jpA-NG-MbL"/>
+                                    <segue destination="rsu-3j-Xfi" kind="embed" identifier="CadastroMotoristaEmbedSegue" id="jpA-NG-MbL"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -704,7 +707,7 @@
         <!--Cadastro Motorista Table View Controller-->
         <scene sceneID="DFL-cR-zsA">
             <objects>
-                <tableViewController id="rsu-3j-Xfi" customClass="PBCCadastroMotoristaTableViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="rsu-3j-Xfi" customClass="PBCCadastroMotoristaTableViewController" customModule="publiCarro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Va2-Gm-aD6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -948,10 +951,23 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bairro" destination="Igy-Tq-2OW" id="vj0-eb-blV"/>
+                        <outlet property="cep" destination="ugC-WC-x6S" id="Uol-Ln-0cI"/>
+                        <outlet property="cidade" destination="Duk-LE-Wux" id="yfM-Hs-Cep"/>
+                        <outlet property="cpf" destination="s88-aj-TkR" id="Eh1-sQ-Rb8"/>
+                        <outlet property="email" destination="G6X-Px-Tr6" id="DaE-6K-9e6"/>
+                        <outlet property="endereco" destination="cTq-JU-rjH" id="KNG-2O-0im"/>
+                        <outlet property="estado" destination="LeI-ot-HVx" id="imF-7Y-iSc"/>
+                        <outlet property="nome" destination="9CC-yH-Fnb" id="Sk9-4e-Xdj"/>
+                        <outlet property="renavamCarro" destination="Cl0-0q-01h" id="era-1L-ZfF"/>
+                        <outlet property="senha" destination="xCn-HQ-LTH" id="DB3-R4-wsu"/>
+                        <outlet property="telefone" destination="WgY-Ox-8kN" id="zT3-j5-xQC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVJ-4z-HjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261.5" y="2289.5"/>
+            <point key="canvasLocation" x="2222.5" y="2289.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WzX-jp-Tpc">
