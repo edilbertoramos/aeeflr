@@ -9,20 +9,8 @@
 import UIKit
 
 class PBCOrcamentoViewController: UIViewController {
-    @IBOutlet var orcamentoButton: UIButton!
-    
-    private var embeddedViewController: PBCOrcamentoTableViewController!
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let vc = segue.destinationViewController as? PBCOrcamentoTableViewController
-            where segue.identifier == "OrcamentoEmbedSegue" {
-                
-                self.embeddedViewController = vc
-        }
-    }
-    @IBAction func enviarOrcamento(sender: AnyObject) {
-        print(self.embeddedViewController.nomeTextField.text)
-    }
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,16 +32,36 @@ class PBCOrcamentoViewController: UIViewController {
     
    
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func keyboardWillShow(notification:NSNotification) {
+        adjustingHeight(true, notification: notification)
     }
-    */
-
+    
+    func keyboardWillHide(notification:NSNotification) {
+        adjustingHeight(false, notification: notification)
+    }
+    
+    @IBOutlet var bottonConstraint: NSLayoutConstraint!
+    
+    func adjustingHeight(show:Bool, notification:NSNotification) {
+        // 1
+        var userInfo = notification.userInfo!
+        // 2
+        let keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        // 3
+        let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
+        // 4
+        let changeInHeight = (CGRectGetHeight(keyboardFrame)) * (show ? 1 : -1)
+        //5
+        if (show && self.bottonConstraint.constant == 0){
+            UIView.animateWithDuration(animationDurarion, animations: { () -> Void in
+                self.bottonConstraint.constant += changeInHeight
+            })
+        }
+        else if (!show){
+            UIView.animateWithDuration(animationDurarion, animations: { () -> Void in
+                self.bottonConstraint.constant += changeInHeight
+            })
+        }
+    }
+    
 }
