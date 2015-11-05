@@ -59,21 +59,31 @@ class PBCAnimacaoViewController: UIViewController {
         })
         
 */
-        
+        //rotacionar modo I infinitamente
         
         let rotacionar = CGFloat(M_PI * 2)
+        
         
         UIView.animateWithDuration(1.0, animations: {
             
             publicarro.transform = CGAffineTransformMakeRotation(rotacionar)
         })
+
+        
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "transform.rotation.z"
+        animation.duration = 2
+        animation.removedOnCompletion = false
+        animation.fillMode = kCAFillModeForwards
+        animation.repeatCount = Float.infinity
+        animation.values = [rotacionar/4, rotacionar/2, rotacionar*3/4, rotacionar]
+        
+        publicarro.layer.addAnimation(animation, forKey: "rotate")
         
         
-        let duracao = 2.0
-        let delay = 0.0
-        let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
         
-        UIView.animateKeyframesWithDuration(duracao, delay: delay, options: options, animations: {
+        // rotacionar modo II
+       /* UIView.animateKeyframesWithDuration(duracao, delay: delay, options: options, animations: {
     
             
             UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1/3, animations: {
@@ -89,14 +99,14 @@ class PBCAnimacaoViewController: UIViewController {
             
             }, completion: {finished in
                 // any code entered here will be applied
-                // once the animation has completed
+             // once the animation has completed
+              
                 
         })
         
+        */
         
-        /*
-        
-        // curva
+       /* // curva
         
         let path = UIBezierPath()
         path.moveToPoint(CGPoint(x: 16,y: 239))
@@ -113,7 +123,7 @@ class PBCAnimacaoViewController: UIViewController {
         publicarro.layer.addAnimation(anim, forKey: "animate position along path")
         
      
-        */
+      */
         
 }
 
