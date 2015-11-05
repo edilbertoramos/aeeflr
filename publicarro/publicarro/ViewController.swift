@@ -18,7 +18,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         super.viewDidLoad()
         createPageViewController()
         setupPageViewControl()
-        navigationController?.navigationBar.hidden = true
         btClose.layer.cornerRadius = 25
     }
     

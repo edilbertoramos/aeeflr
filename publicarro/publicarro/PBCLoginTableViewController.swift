@@ -1,15 +1,8 @@
-//
-//  PBCLoginTableViewController.swift
-//  publiCarro
-//
-//  Created by Lúcio Barros on 04/11/15.
-//  Copyright © 2015 tambatech. All rights reserved.
-//
 
 import UIKit
 
-class PBCLoginTableViewController: UITableViewController {
-
+class PBCLoginTableViewController: UITableViewController
+{
     override func viewDidLoad() {
         super.viewDidLoad()
 
