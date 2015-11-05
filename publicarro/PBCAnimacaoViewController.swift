@@ -18,9 +18,6 @@ class PBCAnimacaoViewController: UIViewController {
         let publicarro = UIImageView()
         publicarro.image = UIImage(named: "carro.png")
         
-       
-     //   let size : CGFloat = 50
-    //    let yPosition : CGFloat = 120
         
         // definindo o tamanho
         publicarro.frame = CGRect(x: 60, y: 300, width: 100, height: 100)
@@ -28,15 +25,16 @@ class PBCAnimacaoViewController: UIViewController {
      //   publicarro.frame = CGRectMake(0, yPosition, size, size)
 
         
-        
         self.view.addSubview(publicarro) // adicionando a imagem na view
+        
+        
         
         /* essa animacao move o carro da esquerda para direita
         
         o método abaixo defini a duração da animação e o estado final da animacao
         
-        UIView.animateWithDuration(1.0, animations: {quadradoColorido.backgroundColor = UIColor.redColor()
-        quadradoColorido.frame = CGRect(x: 320-50, y: 120, width: 50, height: 50)
+        UIView.animateWithDuration(1.0, animations: {publicarro.backgroundColor = UIColor.redColor()
+       publicarro.frame = CGRect(x: 320-50, y: 120, width: 50, height: 50)
     })
         */
         
@@ -62,7 +60,6 @@ class PBCAnimacaoViewController: UIViewController {
         
 */
         
-       
         
         let rotacionar = CGFloat(M_PI * 2)
         
@@ -99,6 +96,8 @@ class PBCAnimacaoViewController: UIViewController {
         
         /*
         
+        // curva
+        
         let path = UIBezierPath()
         path.moveToPoint(CGPoint(x: 16,y: 239))
         path.addCurveToPoint(CGPoint(x: 301, y: 239), controlPoint1: CGPoint(x: 136, y: 373), controlPoint2: CGPoint(x: 178, y: 110))
@@ -111,7 +110,7 @@ class PBCAnimacaoViewController: UIViewController {
         anim.rotationMode = kCAAnimationRotateAuto
         anim.repeatCount = Float.infinity
         anim.duration = 5.0
-        quadradoColorido.layer.addAnimation(anim, forKey: "animate position along path")
+        publicarro.layer.addAnimation(anim, forKey: "animate position along path")
         
      
         */
