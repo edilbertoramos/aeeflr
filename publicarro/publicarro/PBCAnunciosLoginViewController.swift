@@ -6,7 +6,6 @@ class PBCAnunciosLoginViewController: UIViewController, UITableViewDataSource, U
     {
         super.viewDidLoad()
         navigationController?.navigationBar.hidden = false
-
     }
     
     override func didReceiveMemoryWarning()
