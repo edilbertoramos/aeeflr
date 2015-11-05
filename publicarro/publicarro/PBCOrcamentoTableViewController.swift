@@ -1,7 +1,7 @@
 
 import UIKit
 
-class PBCOrcamentoTableViewController: UITableViewController
+class PBCOrcamentoTableViewController: UITableViewController, UITextFieldDelegate
 {
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
@@ -13,6 +13,9 @@ class PBCOrcamentoTableViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        nomeTextField.delegate = self
+        telefoneTextField.delegate = self
+        emailTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning()
@@ -36,6 +39,18 @@ class PBCOrcamentoTableViewController: UITableViewController
             mesLabel.text = "Meses"
         }
         qtdMeses.text = Int(sender.value).description
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField)
+    {
+        if nomeTextField.text?.isEmpty == false && telefoneTextField.text?.isEmpty == false && emailTextField.text?.isEmpty == false
+        {
+            
+        }
+        else
+        {
+            
+        }
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int

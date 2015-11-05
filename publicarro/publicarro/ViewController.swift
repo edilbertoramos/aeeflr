@@ -21,12 +21,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         btClose.layer.cornerRadius = 25
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool)
+    {
         navigationController?.navigationBar.hidden = true
-
     }
-    
-
     
     @IBAction func buttonTapped(sender: AnyObject)
     {

@@ -5,6 +5,7 @@ import Parse
 class PBCOrcamentoViewController: UIViewController
 {
     @IBOutlet var bottonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var orcamentoButton: UIButton!
     
     private var embeddedViewController: PBCOrcamentoTableViewController!
     
@@ -19,7 +20,7 @@ class PBCOrcamentoViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func orcamentoButton(sender: AnyObject)
+    @IBAction func orcamentoButtonTapped(sender: AnyObject)
     {
         let orcamento = PFObject(className: "Orcamento")
         orcamento["nome"] = embeddedViewController.nomeTextField.text
@@ -41,7 +42,6 @@ class PBCOrcamentoViewController: UIViewController
 //    {
 //        adjustingHeight(false, notification: notification)
 //    }
-//
 //    
 //    func adjustingHeight(show:Bool, notification:NSNotification)
 //    {
