@@ -19,10 +19,14 @@ class PBCAnimacaoViewController: UIViewController {
         publicarro.image = UIImage(named: "carro.png")
         
        
-    
+        let size : CGFloat = 50
+        let yPosition : CGFloat = 120
         
         // definindo o tamanho do quadrado
-        publicarro.frame = CGRect(x: 60, y: 300, width: 100, height: 100)
+       // publicarro.frame = CGRect(x: 60, y: 300, width: 100, height: 100)
+        publicarro.frame = CGRect(x: 320-50, y: 120, width: 50, height: 50)
+        publicarro.frame = CGRectMake(0, yPosition, size, size)
+
         
         
         self.view.addSubview(publicarro) // adicionando o quadrado na view
@@ -36,7 +40,27 @@ class PBCAnimacaoViewController: UIViewController {
     })
         */
         
+       
         
+        let duration = 1.0
+        let delay = 0.0
+        let options = UIViewAnimationOptions.CurveLinear
+        
+        // define the animation
+        UIView.animateWithDuration(duration, delay: delay, options: options, animations: {
+            
+            // again use the square constants size and yPosition
+            publicarro.frame = CGRectMake(320-size, yPosition, size, size)
+            
+            }, completion: { animationFinished in
+                
+                publicarro.removeFromSuperview()
+                
+                
+                
+        })
+        
+       /*
         
         let rotacionar = CGFloat(M_PI * 2)
         
@@ -51,13 +75,10 @@ class PBCAnimacaoViewController: UIViewController {
         let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
         
         UIView.animateKeyframesWithDuration(duracao, delay: delay, options: options, animations: {
-            // each keyframe needs to be added here
-            // within each keyframe the relativeStartTime and relativeDuration need to be values between 0.0 and 1.0
+    
             
             UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1/3, animations: {
-                // start at 0.00s (5s × 0)
-                // duration 1.67s (5s × 1/3)
-                // end at   1.67s (0.00s + 1.67s)
+                
                 publicarro.transform = CGAffineTransformMakeRotation(1/3 * rotacionar)
             })
             UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
@@ -73,7 +94,7 @@ class PBCAnimacaoViewController: UIViewController {
                 
         })
         
-        
+        */
         /*
         
         let path = UIBezierPath()
