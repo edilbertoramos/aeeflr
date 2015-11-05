@@ -35,7 +35,8 @@
 		2A679E781BE1063B00969DDF /* PBCAnunciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A679E771BE1063B00969DDF /* PBCAnunciosViewController.swift */; };
 		2AD4EFF41BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */; };
 		2AD4EFF61BE3B90F00F5DF29 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD4EFF51BE3B90F00F5DF29 /* ParseUI.framework */; };
-		7794DEBD1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794DEBC1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7794DEBD1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794DEBC1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift */; };
+		EEF596311BEB8D1000187FAF /* PBCAnimacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF596301BEB8D1000187FAF /* PBCAnimacaoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCCadastroPopUpViewController.swift; sourceTree = "<group>"; };
 		2AD4EFF51BE3B90F00F5DF29 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		7794DEBC1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCAnunciosDisponiveisViewController.swift; sourceTree = "<group>"; };
+		EEF596301BEB8D1000187FAF /* PBCAnimacaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PBCAnimacaoViewController.swift; path = ../PBCAnimacaoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,17 +159,13 @@
 		2412BF631BDE5D2500C53372 /* publicarro */ = {
 			isa = PBXGroup;
 			children = (
-				2412BF641BDE5D2500C53372 /* AppDelegate.swift */,
-				2412BF661BDE5D2500C53372 /* ViewController.swift */,
+				EEF596321BEB8D1F00187FAF /* Animacao */,
+				EEF596331BEB8D4100187FAF /* MainStoryBoard */,
 				2412BF991BDE668900C53372 /* PageItemController.swift */,
-				7794DEBC1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift */,
-				2412BF681BDE5D2500C53372 /* Main.storyboard */,
+				EEF596341BEB8D7700187FAF /* PBCAnunciante */,
 				2412BF9B1BDE717600C53372 /* PBCColor.swift */,
-				2A679E771BE1063B00969DDF /* PBCAnunciosViewController.swift */,
-				2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */,
-				2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */,
+				EEF596351BEB8D9D00187FAF /* PBCCadastro */,
 				2412BF6E1BDE5D2500C53372 /* Assets.xcassets */,
-				2412BF701BDE5D2500C53372 /* LaunchScreen.storyboard */,
 				2412BF731BDE5D2500C53372 /* Info.plist */,
 				2412BF6B1BDE5D2500C53372 /* publicarro.xcdatamodeld */,
 			);
@@ -212,6 +210,43 @@
 				2A550BDC1BE24F7000036839 /* Bolts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEF596321BEB8D1F00187FAF /* Animacao */ = {
+			isa = PBXGroup;
+			children = (
+				EEF596301BEB8D1000187FAF /* PBCAnimacaoViewController.swift */,
+			);
+			name = Animacao;
+			sourceTree = "<group>";
+		};
+		EEF596331BEB8D4100187FAF /* MainStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2412BF701BDE5D2500C53372 /* LaunchScreen.storyboard */,
+				2412BF681BDE5D2500C53372 /* Main.storyboard */,
+				2412BF641BDE5D2500C53372 /* AppDelegate.swift */,
+				2412BF661BDE5D2500C53372 /* ViewController.swift */,
+			);
+			name = MainStoryBoard;
+			sourceTree = "<group>";
+		};
+		EEF596341BEB8D7700187FAF /* PBCAnunciante */ = {
+			isa = PBXGroup;
+			children = (
+				2A679E771BE1063B00969DDF /* PBCAnunciosViewController.swift */,
+				7794DEBC1BE8DA1E0069E00A /* PBCAnunciosDisponiveisViewController.swift */,
+			);
+			name = PBCAnunciante;
+			sourceTree = "<group>";
+		};
+		EEF596351BEB8D9D00187FAF /* PBCCadastro */ = {
+			isa = PBXGroup;
+			children = (
+				2A550BF81BE2520F00036839 /* PBCCadastroViewController.swift */,
+				2AD4EFF31BE3973500F5DF29 /* PBCCadastroPopUpViewController.swift */,
+			);
+			name = PBCCadastro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +386,7 @@
 				2412BF651BDE5D2500C53372 /* AppDelegate.swift in Sources */,
 				2A550BF91BE2520F00036839 /* PBCCadastroViewController.swift in Sources */,
 				2412BF9A1BDE668900C53372 /* PageItemController.swift in Sources */,
+				EEF596311BEB8D1000187FAF /* PBCAnimacaoViewController.swift in Sources */,
 				2412BF6D1BDE5D2500C53372 /* publicarro.xcdatamodeld in Sources */,
 				2A679E781BE1063B00969DDF /* PBCAnunciosViewController.swift in Sources */,
 			);
