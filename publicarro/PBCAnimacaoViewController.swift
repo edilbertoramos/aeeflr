@@ -19,17 +19,17 @@ class PBCAnimacaoViewController: UIViewController {
         publicarro.image = UIImage(named: "carro.png")
         
        
-        let size : CGFloat = 50
-        let yPosition : CGFloat = 120
+     //   let size : CGFloat = 50
+    //    let yPosition : CGFloat = 120
         
-        // definindo o tamanho do quadrado
-       // publicarro.frame = CGRect(x: 60, y: 300, width: 100, height: 100)
-        publicarro.frame = CGRect(x: 320-50, y: 120, width: 50, height: 50)
-        publicarro.frame = CGRectMake(0, yPosition, size, size)
+        // definindo o tamanho
+        publicarro.frame = CGRect(x: 60, y: 300, width: 100, height: 100)
+        //publicarro.frame = CGRect(x: 320-50, y: 120, width: 50, height: 50)
+     //   publicarro.frame = CGRectMake(0, yPosition, size, size)
 
         
         
-        self.view.addSubview(publicarro) // adicionando o quadrado na view
+        self.view.addSubview(publicarro) // adicionando a imagem na view
         
         /* essa animacao move o carro da esquerda para direita
         
@@ -41,7 +41,7 @@ class PBCAnimacaoViewController: UIViewController {
         */
         
        
-        
+        /*
         let duration = 1.0
         let delay = 0.0
         let options = UIViewAnimationOptions.CurveLinear
@@ -60,7 +60,9 @@ class PBCAnimacaoViewController: UIViewController {
                 
         })
         
-       /*
+*/
+        
+       
         
         let rotacionar = CGFloat(M_PI * 2)
         
@@ -70,7 +72,7 @@ class PBCAnimacaoViewController: UIViewController {
         })
         
         
-        let duracao = 10.0
+        let duracao = 2.0
         let delay = 0.0
         let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
         
@@ -94,7 +96,7 @@ class PBCAnimacaoViewController: UIViewController {
                 
         })
         
-        */
+        
         /*
         
         let path = UIBezierPath()
