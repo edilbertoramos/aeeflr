@@ -23,7 +23,6 @@ class PBCCadastroMotoristaTableViewController: UITableViewController, UITextFiel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.telefone.delegate = self
 
     }
 
@@ -33,29 +32,11 @@ class PBCCadastroMotoristaTableViewController: UITableViewController, UITextFiel
 
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        if (string.characters.count >= 1) {
-            if (textField.text?.characters.count <= 14) {
-                if (textField.text?.characters.count == 2) {
-                    let tempStr = "(" + textField.text! + ")"
-                    textField.text = tempStr
-                    
-                } else if (textField.text?.characters.count == 10) {
-                    let tempStr = textField.text! + "-"
-                    textField.text = tempStr
-                }
-            } else {
-                return false;
-            }
-        }
-        return true;
-    }
-
 }
