@@ -22,18 +22,18 @@ UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Adicionando delegate aos outlets
-        self.telefone.delegate = self
-        self.cpf.delegate = self
-        self.cep.delegate = self
-        self.email.delegate = self
-        self.senha.delegate = self
-        self.endereco.delegate = self
-        self.renavamCarro.delegate = self
-        self.cidade.delegate = self
-        self.estado.delegate = self
-        self.nome.delegate = self
-        self.bairro.delegate = self
+//        // Adicionando delegate aos outlets
+//        self.telefone.delegate = self
+//        self.cpf.delegate = self
+//        self.cep.delegate = self
+//        self.email.delegate = self
+//        self.senha.delegate = self
+//        self.endereco.delegate = self
+//        self.renavamCarro.delegate = self
+//        self.cidade.delegate = self
+//        self.estado.delegate = self
+//        self.nome.delegate = self
+//        self.bairro.delegate = self
         
         picker.delegate = self
         
