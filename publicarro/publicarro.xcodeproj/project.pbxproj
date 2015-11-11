@@ -37,6 +37,7 @@
 		778C30671BEA36A20091548E /* PBCCadastroMotoristaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C30661BEA36A20091548E /* PBCCadastroMotoristaViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		778C306D1BEA3F350091548E /* PBCLoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C306C1BEA3F350091548E /* PBCLoginTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		778C306F1BEA400C0091548E /* PBCOrcamentoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C306E1BEA400C0091548E /* PBCOrcamentoTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		778E6D271BF248E000A44106 /* PBCLoadAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E6D261BF248E000A44106 /* PBCLoadAnimationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7794DEBF1BE932130069E00A /* PBCOrcamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794DEBE1BE932130069E00A /* PBCOrcamentoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7794DEC11BE933A20069E00A /* PBCLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794DEC01BE933A20069E00A /* PBCLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		778C30661BEA36A20091548E /* PBCCadastroMotoristaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCCadastroMotoristaViewController.swift; sourceTree = "<group>"; };
 		778C306C1BEA3F350091548E /* PBCLoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCLoginTableViewController.swift; sourceTree = "<group>"; };
 		778C306E1BEA400C0091548E /* PBCOrcamentoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCOrcamentoTableViewController.swift; sourceTree = "<group>"; };
+		778E6D261BF248E000A44106 /* PBCLoadAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCLoadAnimationViewController.swift; sourceTree = "<group>"; };
 		7794DEBE1BE932130069E00A /* PBCOrcamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCOrcamentoViewController.swift; sourceTree = "<group>"; };
 		7794DEC01BE933A20069E00A /* PBCLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +169,7 @@
 				2412BF661BDE5D2500C53372 /* ViewController.swift */,
 				2412BF991BDE668900C53372 /* PageItemController.swift */,
 				2412BF681BDE5D2500C53372 /* Main.storyboard */,
+				778E6D261BF248E000A44106 /* PBCLoadAnimationViewController.swift */,
 				778C306E1BEA400C0091548E /* PBCOrcamentoTableViewController.swift */,
 				778C306C1BEA3F350091548E /* PBCLoginTableViewController.swift */,
 				778C30661BEA36A20091548E /* PBCCadastroMotoristaViewController.swift */,
@@ -366,6 +369,7 @@
 				778C306F1BEA400C0091548E /* PBCOrcamentoTableViewController.swift in Sources */,
 				2412BF651BDE5D2500C53372 /* AppDelegate.swift in Sources */,
 				2412BF9A1BDE668900C53372 /* PageItemController.swift in Sources */,
+				778E6D271BF248E000A44106 /* PBCLoadAnimationViewController.swift in Sources */,
 				778C30671BEA36A20091548E /* PBCCadastroMotoristaViewController.swift in Sources */,
 				2412BF6D1BDE5D2500C53372 /* publicarro.xcdatamodeld in Sources */,
 				7794DEBF1BE932130069E00A /* PBCOrcamentoViewController.swift in Sources */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2412BF601BDE5D2500C53372"
-               BuildableName = "publicarro.app"
+               BuildableName = "publiCarro.temp_caseinsensitive_rename.app"
                BlueprintName = "publicarro"
-               ReferencedContainer = "container:publicarro.xcodeproj">
+               ReferencedContainer = "container:publiCarro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2412BF771BDE5D2500C53372"
-               BuildableName = "publicarroTests.xctest"
+               BuildableName = "publiCarro.temp_caseinsensitive_rename.xctest"
                BlueprintName = "publicarroTests"
-               ReferencedContainer = "container:publicarro.xcodeproj">
+               ReferencedContainer = "container:publiCarro.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2412BF821BDE5D2500C53372"
-               BuildableName = "publicarroUITests.xctest"
+               BuildableName = "publiCarro.temp_caseinsensitive_rename.xctest"
                BlueprintName = "publicarroUITests"
-               ReferencedContainer = "container:publicarro.xcodeproj">
+               ReferencedContainer = "container:publiCarro.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2412BF601BDE5D2500C53372"
-            BuildableName = "publicarro.app"
+            BuildableName = "publiCarro.temp_caseinsensitive_rename.app"
             BlueprintName = "publicarro"
-            ReferencedContainer = "container:publicarro.xcodeproj">
+            ReferencedContainer = "container:publiCarro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2412BF601BDE5D2500C53372"
-            BuildableName = "publicarro.app"
+            BuildableName = "publiCarro.temp_caseinsensitive_rename.app"
             BlueprintName = "publicarro"
-            ReferencedContainer = "container:publicarro.xcodeproj">
+            ReferencedContainer = "container:publiCarro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2412BF601BDE5D2500C53372"
-            BuildableName = "publicarro.app"
+            BuildableName = "publiCarro.temp_caseinsensitive_rename.app"
             BlueprintName = "publicarro"
-            ReferencedContainer = "container:publicarro.xcodeproj">
+            ReferencedContainer = "container:publiCarro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
